@@ -45,7 +45,8 @@ public class guerraNaval {
 		int coordy = 0; // Coordenada Y usuari
 
 
-		//Joc de PROVES i comprovacions en temps de desenvolupament (vàries)
+		//Joc de PROVES i comprovacions en temps de desenvolupament
+		//Aquí sota n'hi ha algunes però se'n troben més al codi
 		
 		//comprovarFinal(vaixells);
 		//omplirDeBrossa(vaixells);
@@ -53,7 +54,7 @@ public class guerraNaval {
 		
 		//vaixells = escenariFictici(); //En blanc immaculat
 		//vaixells = escenariFicticiTocat(); //Amb resultats arbitraris
-		//vaixells = escenariAleatori(); //Definitiu: totalment aleatori
+		//vaixells = escenariAleatori(); //Totalment aleatori
 		
 		//System.out.println(comprovarCoordenades(8,3, vaixells));
 		//vaixells = canviarEstat(8,3, vaixells);
@@ -125,7 +126,7 @@ public class guerraNaval {
 					
 				} 
 				
-				// Verifiquem que hi ha un vaixell, però no havia estat descobert
+				// Verifiquem que hi ha un vaixell que no havia estat descobert
 				else if (comprovarCoordenades(coordx, coordy, vaixells) == 'N')
 					
 				{
