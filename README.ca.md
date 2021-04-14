@@ -8,8 +8,9 @@ El joc 'Guerra Naval' és una adaptació d'un joc de taula, està escrit en **Ja
 
 És un exemple pràctic de programació modular amb funcions senzilles per a observar l'ús de vectors i matrius, amb transformació de tipus de dades. És molt més divertit que construir una simulació d'un full de càlcul `;-)`
 
-La funció principal és breu, amb crides a les funcions auxiliars que executen les operacions. És interessant tenir en compte que dins del codi s'inclouen moltes altres funcions, útils per veure el comportament dels vectors i les matrius, les quals es poden activar i desactivar oportunament.
+La funció principal és breu, amb crides a les funcions auxiliars que executen les operacions. És interessant tenir en compte que dins del codi s'inclouen moltes altres funcions, útils per a veure el comportament dels vectors i les matrius, les quals es poden activar i desactivar oportunament.
 
 El codi està estructurat de manera senzilla i sense complicacions, tot i que està autoexplicat mitjançant comentaris simples en català.
+
 
 ![foto de pantalla](screenshot_fleet.png)

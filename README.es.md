@@ -12,4 +12,5 @@ La función principal es breve, con llamadas a las funciones auxiliares que ejec
 
 El código está estructurado de manera sencilla y sin complicaciones, aunque está autoexplicado mediante comentarios simples en catalán, que pueden ser fácilmente traducidos mediante Deepl, Google u otros traductores. 
 
+
 ![foto de pantalla](screenshot_fleet.png)

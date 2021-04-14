@@ -12,4 +12,5 @@ The main function is brief, with calls to auxiliary functions that execute opera
 
 The code is structured in a simple and uncomplicated way, although it is self-explained by simple comments in Catalan, which can be easily translated using Deepl, Google or other translators. 
 
+
 ![screenshot](screenshot_fleet.png)
