@@ -10,7 +10,7 @@
 
 
 
-import java.util.*;
+import java.util.Scanner;
 
 public class guerraNaval {
 
@@ -43,9 +43,9 @@ public class guerraNaval {
 		int jugada = 0; // Encara no ha jugat cap vegada
 		int coordx = 0; // Coordenada X usuari
 		int coordy = 0; // Coordenada Y usuari
+		char comprovacio; // Quin valor tenen les coordenades actives: N = Res, T = Tocat o E = Enfonsat
 
-
-		//Joc de PROVES i comprovacions en temps de desenvolupament
+		//PROVES i comprovacions en temps de desenvolupament
 		//Aquí sota n'hi ha algunes però se'n troben més al codi
 		
 		//comprovarFinal(vaixells);
@@ -76,10 +76,9 @@ public class guerraNaval {
 		
 		// Inicialitzem l'escenari
 		vaixells = escenariAleatori();
-		
-		
+			
 		// Instruccions per a l'usuari
-		System.out.println("\nEl joc comença amb un nou tauler en blanc.\nQuan toquis o enfonsis un vaixell tens una jugada extra.\n");
+		System.out.println("\nEl joc comença amb un nou tauler en blanc.\nQuan toquis o enfonsis un vaixell tindràs una jugada extra.\n");
 		System.out.println("Prepara't per a jugar...\n");
 		
 		// Pintem un nou tauler en blanc
@@ -105,9 +104,12 @@ public class guerraNaval {
 			}
 			
 			else {
-				
+
+				// Obtenim l'estat de la coordenada (és un char)
+				comprovacio = comprovarCoordenades(coordx, coordy, vaixells);
+
 				// Ja estava enfonsat			
-				if (comprovarCoordenades(coordx, coordy, vaixells) == 'E')
+				if (comprovacio == 'E')
 					
 				{
 					System.out.println("Ja estava enfonsat, però la jugada compta igualment.");
@@ -117,7 +119,7 @@ public class guerraNaval {
 				}
 				
 				// Ja estava tocat
-				else if (comprovarCoordenades(coordx, coordy, vaixells) == 'T')
+				else if (comprovacio == 'T')
 					
 				{
 					System.out.println("Ja estava tocat, però la jugada compta igualment.");
@@ -127,7 +129,7 @@ public class guerraNaval {
 				} 
 				
 				// Verifiquem que hi ha un vaixell que no havia estat descobert
-				else if (comprovarCoordenades(coordx, coordy, vaixells) == 'N')
+				else if (comprovacio == 'N')
 					
 				{
 					canviarATocat(coordx, coordy, vaixells);
@@ -336,7 +338,7 @@ public class guerraNaval {
 
 	
 	public static String [][] escenariFictici()
-	// Crea un escenari inicial fictici sense dades conegudes a priori (test)
+	// Crea un escenari inicial fictici amb dades conegudes a priori (test)
 	{
 		
 		String [][] novaMatriu = 
